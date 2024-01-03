@@ -1,3 +1,8 @@
+HTTP/1.1 200 OK
+Server: nginx/1.40.0
+Content-Type: application/pkcs7-mime
+Content-Length: 245
+
 {
   "applinks": {
     "apps": [],
