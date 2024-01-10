@@ -1,22 +1,22 @@
 {
   "hosting": {
-    "source": ".",
+        "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
-  },
-  "headers": [
-    {
-      "source": "/apple-app-site-association",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
-    }
-  ],
-  "appAssociation": "NONE"
+    ],
+    "headers": [
+      {
+        "source": "apple-app-site-association",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    ],
+    "appAssociation": "NONE"
+  }
 }
