@@ -1,15 +1,15 @@
-HTTP/1.1 200 OK
-Server: nginx/1.40.0
-Content-Type: application/pkcs7-mime
-Content-Length: 245
-
 {
   "applinks": {
     "apps": [],
     "details": [
       {
-        "appID": "8KXX6K345W.io.xamble.creators.app",
-        "paths": ["*"]
+        "appIDs":[
+          "8KXX6K345W.io.xamble.creators.app"
+        ],
+        
+        "components":[
+          {"/":"*"}
+        ]
       }
     ]
   }
