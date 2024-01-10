@@ -1,20 +1,11 @@
-Accept: application/json
-Content-Type: application/json
-Content-Length: 81
-
 {
   "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appIDs":[
-          "8KXX6K345W.io.xamble.creators.app"
-        ],
-        
-        "components":[
-          {"/":"*"}
-        ]
-      }
-    ]
+      "apps": [],
+      "details": [
+          {
+              "appID": "8KXX6K345W.io.xamble.creators.app",
+              "paths": ["*","/"]
+          }
+      ]   
   }
 }
