@@ -1,0 +1,14 @@
+{
+    "webcredentials": {
+        "apps": ["8KXX6K345W.io.xamble.creators.app"]
+      },
+  "applinks": {
+      "apps": [],
+      "details": [
+          {
+              "appID": "8KXX6K345W.io.xamble.creators.app",
+              "paths": ["*","/"]
+          }
+      ]   
+  }
+}
