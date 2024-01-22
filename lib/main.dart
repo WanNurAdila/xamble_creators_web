@@ -72,10 +72,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(bottom: 40),
-              child: Image.asset('assets/xamble_banner.png', width: 200),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.only(bottom: 40),
+            //   child: Image.asset('assets/xamble_banner.png', width: 200),
+            // ),
             Text(
               'You will be redirect shortly.',
               style:

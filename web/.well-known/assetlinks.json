@@ -1,11 +1,5 @@
-[
-    {
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.xamble.creators",
-        "sha256_cert_fingerprints":
-          ["7A:ED:74:72:D0:8A:94:1C:C8:3E:CC:1C:8A:CE:DF:D8:6D:2E:3E:A0:FE:5F:F9:61:79:69:22:CF:C3:50:F7:30"]
-      }
-    }
-  ]
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "io.xamble.creators",
+               "sha256_cert_fingerprints": ["7A:ED:74:72:D0:8A:94:1C:C8:3E:CC:1C:8A:CE:DF:D8:6D:2E:3E:A0:FE:5F:F9:61:79:69:22:CF:C3:50:F7:30"] }
+}]
