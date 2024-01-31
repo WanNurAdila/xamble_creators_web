@@ -1,8 +1,9 @@
 {
   "hosting": {
     "public": "build/web",
-    "appAssociation": "NONE",
+    "appAssociation": "AUTO",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "include": ["/.well-known"],
     "headers": [
       {
         "source":"**/.well-known/**",
