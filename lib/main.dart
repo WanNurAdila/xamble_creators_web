@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:html' as html;
 
-
 void main() {
   runApp(const MyApp());
   // Import the functions you need from the SDKs you need
@@ -19,7 +18,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Xamble Creators'),
@@ -47,21 +45,19 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
-
-
-void initState() {
+  void initState() {
     // TODO: implement initState
     super.initState();
-    triggerDeepLink();
   }
 
   void triggerDeepLink() {
-
     final currentUrl = html.window.location.href;
-    var splitUrl = currentUrl.split('https://xamble-creators-web.web.app/?code=');
-  final url = 'https://xamble-creators-web.web.app?data=${splitUrl[1]}';
-  html.window.location.href = url;
-}
+    var splitUrl =
+        currentUrl.split('https://xamble-creators-web.web.app/?code=');
+    final url = 'https://xamble-creators-web.web.app?data=${splitUrl[1]}';
+    html.window.location.href = url;
+  }
+
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
@@ -93,11 +89,16 @@ void initState() {
             //   padding: const EdgeInsets.only(bottom: 40),
             //   child: Image.asset('assets/xamble_banner.png', width: 200),
             // ),
-            Text(
-              'You will be redirect shortly.',
-              style:
-                  GoogleFonts.barlow(fontSize: 16, fontWeight: FontWeight.w400),
-            ),
+            InkWell(
+              onTap: () {
+                triggerDeepLink();
+              },
+              child: Text(
+                'Click to be redirect',
+                style: GoogleFonts.barlow(
+                    fontSize: 16, fontWeight: FontWeight.w400),
+              ),
+            )
           ],
         ),
       ),
