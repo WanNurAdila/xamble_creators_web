@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'dart:html' as html;
+
 
 void main() {
   runApp(const MyApp());
@@ -45,6 +47,21 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
+
+
+void initState() {
+    // TODO: implement initState
+    super.initState();
+    triggerDeepLink();
+  }
+
+  void triggerDeepLink() {
+
+    final currentUrl = html.window.location.href;
+    var splitUrl = currentUrl.split('https://xamble-creators-web.web.app/?code=');
+  final url = 'https://xamble-creators-web.web.app?data=${splitUrl[1]}';
+  html.window.location.href = url;
+}
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
