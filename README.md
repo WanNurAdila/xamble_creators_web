@@ -7,4 +7,4 @@ A callback url for both iOS and android for Xamble Creators
 
 
 1. Run ```fvm flutter build web``` to build web folder.
-2. Run ``` firebase deploy``` to deploy your changes to live.
+2. Run ```firebase deploy``` to deploy your changes to live.
