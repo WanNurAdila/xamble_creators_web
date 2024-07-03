@@ -51,20 +51,13 @@ class _MyHomePageState extends State<MyHomePage> {
     
   }
 
-  void triggerDeepLink() {
-    final currentUrl = html.window.location.href;
-    if (currentUrl.contains('https://xamble-creators-web.web.app/?code=')) {
-    var splitUrl =
-        currentUrl.split('https://xamble-creators-web.web.app/?code=');
-    final url = 'https://xamble-creators-web.web.app?data=${splitUrl[1]}';
-    html.window.location.href = url;
-    } else {
-      var splitUrl =
-        currentUrl.split('https://xamble-creators-web.web.app/');
-    final url = 'https://xamble-creators-web.web.app?${splitUrl[1]}';
-    html.window.location.href = url;
-    }
-  }
+//  void triggerDeepLink() {
+//     final currentUrl = html.window.location.href;
+//     var splitUrl =
+//         currentUrl.split('https://xamble-creators-web.web.app/?#');
+//     final url = 'https://xamble-creators-web.web.app?${splitUrl[1]}';
+//     html.window.location.href = url;
+//   }
 
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -99,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // ),
             InkWell(
               onTap: () {
-                triggerDeepLink();
+                // triggerDeepLink();
               },
               child: Text(
                 'You will be redirect shortly..',
