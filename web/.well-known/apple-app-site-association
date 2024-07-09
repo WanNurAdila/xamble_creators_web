@@ -3,14 +3,14 @@
         "apps": ["8KXX6K345W.io.xamble.creators.app"]
       },
   "applinks": {
-      "apps": ["8KXX6K345W.io.xamble.creators.app"],
+      "apps": [],
       "details": [
           {
               "appID": "8KXX6K345W.io.xamble.creators.app",
               "paths": ["*","/"],
               "components": [
                 {
-                    "/": "/callback/*",
+	                "/": "/*",
                     "?": { "access_token": "????" },
                     "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'access_token' and a value of exactly four characters."
                  }

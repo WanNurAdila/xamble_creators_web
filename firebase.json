@@ -20,7 +20,10 @@
     "rewrites": [
       {
         "source": "**/apple-app-site-association",
-        "destination": "/.well-known/apple-app-site-association"
+        "destination": "/.well-known/apple-app-site-association",
+        "content-type": "application/json",
+        "code":200
+        
       },
       {
         "source": "**",
