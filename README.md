@@ -1,6 +1,6 @@
 # xamble_creators_web
 
-A callback url for both iOS and android for Xamble Creators
+An android callback url for Xamble Creators
 
 ## Getting Started
 
